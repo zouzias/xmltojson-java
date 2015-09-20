@@ -29,6 +29,8 @@ public class Main {
             PrintWriter writer = new PrintWriter("papers.json");
             writer.write(jsonPrettyPrintString);
 
+            writer.close();
+
         } catch (JSONException | IOException je) {
             System.out.println(je.toString());
         }
